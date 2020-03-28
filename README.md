@@ -40,4 +40,14 @@ detect_ner = NER()
 detect_ner.Predict_textfile("/path/to/textfile.txt")
  ```
 The input textfile must contain sentences one after each other in seperate lines. The annotated tags can be found in the file named 'textfile__NER.txt'.
- 
+
+### Train your own NER model
+If you wish, to train your own NER model with specific NER tags you can do so in one line. First, create dictionary with training hyperparameters in the following format.
+```python
+    train_dict = {
+            "lr" : 0.1 ,
+            "batch_size" : 32 ,
+            "epochs" : 150 ,
+            "hidden_size" : 256
+            }
+   ```
