@@ -45,9 +45,25 @@ The input textfile must contain sentences one after each other in seperate lines
 If you wish, to train your own NER model with specific NER tags you can do so in one line. First, create dictionary with training hyperparameters in the following format.
 ```python
     train_dict = {
-            "lr" : 0.1 ,
-            "batch_size" : 32 ,
-            "epochs" : 150 ,
-            "hidden_size" : 256
+            "lr" : 0.1 ,              # learning rate
+            "batch_size" : 32 ,       # batch size
+            "epochs" : 150 ,          # no.of epochs
+            "hidden_size" : 256       # size of hidden_state LSTMs
             }
    ```
+  Finally, pass it to the training code.
+  ```python 
+      detect_ner.train_NER(data_folder="/path/to/folder",  # folder path containing all test files
+                         train_file="train.txt",            
+                         dev_file="dev.txt",
+                         test_file="test.txt",
+                         train_dict=train_dict) 
+  ```
+  Further use the trained model to predict Sentences in tags
+  ```python 
+from HindiNLPTools.HindiNer import NER
+detect_ner = NER()
+sentence = detect_ner.Predict("अविनाश आगरा में रहता है",is_path=True,path="/path/to/trained/model")
+print(sentence)
+ ```
+ 
