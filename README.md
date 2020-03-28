@@ -28,10 +28,16 @@ The NER Tagger identifies various parts of sentences and tags them with the type
 In order to use the Tagger, for one sentence 
 ```python 
 from HindiNLPTools.HindiNer import NER
-
 detect_ner = NER()
 sentence = detect_ner.Predict("अविनाश आगरा में रहता है")
 print(sentence)
  ```
- Print the sentence to see what the tagger found. Furthermore 
+ 
+ Print the sentence to see what the tagger found. Furthermore, entire textfiles can be processed and NER tags can be identified for all sentences
+ ```python 
+from HindiNLPTools.HindiNer import NER
+detect_ner = NER()
+detect_ner.Predict_textfile("/path/to/textfile.txt")
+ ```
+The input textfile must contain sentences one after each other in seperate lines. The annotated tags can be found in the file named 'textfile__NER.txt'.
  
