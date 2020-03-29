@@ -1,0 +1,45 @@
+2020-03-27 11:22:20,878 ----------------------------------------------------------------------------------------------------
+2020-03-27 11:22:20,878 Model: "SequenceTagger(
+  (embeddings): StackedEmbeddings(
+    (list_embedding_0): FlairEmbeddings(
+      (lm): LanguageModel(
+        (drop): Dropout(p=0.1, inplace=False)
+        (encoder): Embedding(3520, 100)
+        (rnn): LSTM(100, 2048)
+        (decoder): Linear(in_features=2048, out_features=3520, bias=True)
+      )
+    )
+    (list_embedding_1): FlairEmbeddings(
+      (lm): LanguageModel(
+        (drop): Dropout(p=0.1, inplace=False)
+        (encoder): Embedding(3520, 100)
+        (rnn): LSTM(100, 2048)
+        (decoder): Linear(in_features=2048, out_features=3520, bias=True)
+      )
+    )
+  )
+  (word_dropout): WordDropout(p=0.05)
+  (locked_dropout): LockedDropout(p=0.5)
+  (embedding2nn): Linear(in_features=4096, out_features=4096, bias=True)
+  (rnn): LSTM(4096, 256, batch_first=True, bidirectional=True)
+  (linear): Linear(in_features=512, out_features=18, bias=True)
+)"
+2020-03-27 11:22:20,879 ----------------------------------------------------------------------------------------------------
+2020-03-27 11:22:20,879 Corpus: "Corpus: 17430 train + 2181 dev + 2182 test sentences"
+2020-03-27 11:22:20,879 ----------------------------------------------------------------------------------------------------
+2020-03-27 11:22:20,879 Parameters:
+2020-03-27 11:22:20,879  - learning_rate: "0.1"
+2020-03-27 11:22:20,880  - mini_batch_size: "32"
+2020-03-27 11:22:20,880  - patience: "3"
+2020-03-27 11:22:20,880  - anneal_factor: "0.5"
+2020-03-27 11:22:20,880  - max_epochs: "150"
+2020-03-27 11:22:20,880  - shuffle: "True"
+2020-03-27 11:22:20,881  - train_with_dev: "False"
+2020-03-27 11:22:20,881  - batch_growth_annealing: "False"
+2020-03-27 11:22:20,881 ----------------------------------------------------------------------------------------------------
+2020-03-27 11:22:20,881 Model training base path: "resources/taggers/saved-models"
+2020-03-27 11:22:20,881 ----------------------------------------------------------------------------------------------------
+2020-03-27 11:22:20,881 Device: cpu
+2020-03-27 11:22:20,881 ----------------------------------------------------------------------------------------------------
+2020-03-27 11:22:20,881 Embeddings storage mode: cpu
+2020-03-27 11:22:20,882 ----------------------------------------------------------------------------------------------------
