@@ -67,3 +67,5 @@ sentence = detect_ner.Predict("अविनाश आगरा में रह�
 print(sentence)
  ```
  
+ 
+ 
