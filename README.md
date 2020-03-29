@@ -10,19 +10,8 @@ A specialized NLP library which provides tools to perform basic NLP tasks on Hin
 ## NER Tagger
 The NER Tagger identifies various parts of sentences and tags them with the type of entity they could represent. Currently the tags supported by our model are
 <table> 
-  <tr> <th>  Heading </th> <th> Tag Type  </th></tr>
-  <tr> <td>  NEP </td> <td> Person  </td></tr>
-  <tr> <td>  NED </td> <td> Designation  </td> </tr>
-  <tr> <td>  NEO </td> <td> Object  </td> </tr>
-  <tr> <td>  NEA </td> <td> Abbreviation  </td> </tr>
-  <tr> <td>  NEB </td> <td> Brand  </td> </tr>
-  <tr> <td>  NETP </td> <td> Title-Person  </td> </tr>
-  <tr> <td>  NETO </td> <td> Title-Object </td> </tr>
-  <tr> <td>  NEL </td> <td> Location </td> </tr>
-  <tr> <td>  NETI </td> <td> Time </td> </tr>
-  <tr> <td>  NEN </td> <td> Number </td> </tr>
-  <tr> <td> NEM </td> <td> Measure </td> </tr>
-  <tr> <td>  NETE </td> <td> Terms </td> </tr>
+  <tr> <th>  Heading </th> <td>  NED </td>  <td>  NEO </td>  <td>  NEA </td>  <td>  NEB </td>  <td>  NETP </td> <td>  NETO </td> <td>  NEL </td> <td>  NETI </td> <td>  NEN </td>  <td> NEM </td>  <td>  NETE </td>  </tr>
+  <tr> <th> Tag Type  </th> <td>  NEP </td> <td> Person  </td> <td> Designation  </td>  <td> Object  </td> <td> Abbreviation  </td> <td> Brand  </td> <td> Title-Person  </td> <td> Title-Object </td> <td> Location </td>  <td> Time </td> <td> Number </td> <td> Measure </td>  <td> Terms </td> </tr>
 </table>
 
 In order to use the Tagger, for one sentence 
