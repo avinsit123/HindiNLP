@@ -26,7 +26,7 @@ class classifier():
                                          delimiter='\t' ) 
         self.label_dict = self.corpus.make_label_dictionary()
         self.embeddings = [FlairEmbeddings('hi-forward'),FlairEmbeddings('hi-backward'),]
-  
+
     def train(self,train_dict,dest_path= os.getcwd() + '/HindiNLPTools/resources/taggers/classifiers'):
         document_embeddings: DocumentRNNEmbeddings = DocumentRNNEmbeddings(self.embeddings,
                                                                      hidden_size=train_dict["hidden_size"],

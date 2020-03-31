@@ -9,8 +9,11 @@ Created on Fri Mar 27 12:33:13 2020
 from HindiNLPTools.HindiNer import NER
 from HindiNLPTools.AutoClassifier import classifier
 
+<<<<<<< HEAD
 
 if __name__ == "__main__":
     detect_ner = NER()
     sentence = detect_ner.Predict("अविनाश आगरा में रहता है")
     print(sentence)    
+=======
+>>>>>>> a7f6d3d51b91c37d05e19c66a568d42092252f30

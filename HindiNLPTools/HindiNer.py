@@ -49,7 +49,6 @@ class NER():
                 
         def train_NER(self,data_folder,train_file,dev_file,test_file,train_dict,is_gpu=False):
             columns = {0: 'text', 1: 'ner'}
-            
             if is_gpu == True:
                 flair.device = torch.device("cuda:0")
             corpus: Corpus = ColumnCorpus(data_folder, columns,
