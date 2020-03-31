@@ -6,6 +6,10 @@ A specialized NLP library which provides tools to perform basic NLP tasks on Hin
   <li> <b> Part-Of-Speech Tagger </b> : </li>
   <li> <b> AutoClassifier </b> : Train your models on classification datasets just in one line of code. Finetune model using custom parameters</li>
 <ul>
+Install the Library
+```terminal 
+from HindiNLPTools.HindiNer import NER
+ ```
   
 ## NER Tagger
 The NER Tagger identifies various parts of sentences and tags them with the type of entity they could represent. Currently the tags supported by our model are
@@ -55,6 +59,8 @@ detect_ner = NER()
 sentence = detect_ner.Predict("अविनाश आगरा में रहता है",is_path=True,path="/path/to/trained/model")
 print(sentence)
  ```
+ 
+ 
  
  
  
