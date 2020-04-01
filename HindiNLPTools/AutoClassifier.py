@@ -30,7 +30,7 @@ class classifier():
         self.download_dir = "/".join(self.download_path_split) + "/HindiNLPTools"
         self.dest_path = self.download_dir + "/resources/taggers/classifiers"
 
-    def train(self,train_dict,dest_path= os.getcwd() + '/HindiNLPTools/resources/taggers/classifiers'):
+    def train(self,train_dict):
 
         if os.path.exists(dest_path) == False :
             if not os.path.exists(self.download_dir + "/resources"):
