@@ -1,4 +1,4 @@
-# HindiNLPTools
+# HindiNLP
 
 A specialized NLP library which provides tools to perform basic NLP tasks on Hindi Datasets. Currently, the library supports 
 <ul>
@@ -10,7 +10,7 @@ A specialized NLP library which provides tools to perform basic NLP tasks on Hin
 
 Directly install library using pip
 ```terminal
-pip install HindiNLPTools
+pip install HindiNLP
 ```
 
 
@@ -25,7 +25,7 @@ The NER Tagger identifies various parts of sentences and tags them with the type
 
 In order to use the Tagger, for one sentence 
 ```python 
-from HindiNLPTools.HindiNer import NER
+from HindiNLP.HindiNer import NER
 detect_ner = NER()
 sentence = detect_ner.Predict("अविनाश आगरा में रहता है")
 print(sentence)
@@ -33,7 +33,7 @@ print(sentence)
  
  Print the sentence to see what the tagger found. Furthermore, entire textfiles can be processed and NER tags can be identified for all sentences
  ```python 
-from HindiNLPTools.HindiNer import NER
+from HindiNLP.HindiNer import NER
 detect_ner = NER()
 detect_ner.Predict_textfile("/path/to/textfile.txt")
  ```
@@ -61,7 +61,7 @@ If you wish, to train your own NER model with specific NER tags you can do so in
   ```
  Further use the trained model to predict Sentences in tags
  ```python 
-from HindiNLPTools.HindiNer import NER
+from HindiNLP.HindiNer import NER
 detect_ner = NER()
 sentence = detect_ner.Predict("अविनाश आगरा में रहता है",is_path=True,path="/path/to/trained/model")
 print(sentence)
@@ -72,7 +72,7 @@ print(sentence)
 The Library also provides support for training your own Classifier with just one line of code. 
 
 ```python
-from HindiNLPTools.AutoClassifier import classifier
+from HindiNLP.AutoClassifier import classifier
 SVC = classifier("/path/to/dir") # path to directory containing text files
 train_dict = {
           "hidden_size" : 512, # hidden size of LSTMs

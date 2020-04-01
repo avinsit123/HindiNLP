@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb689f2f-a988-4f5d-97ad-7f243f736742" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/AutoClassifier.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/HindiNer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/google_drive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/tagger/example-ner/best-model.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/tagger/example-ner/loss.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/tagger/example-ner/test.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/tagger/example-ner/training.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/tagger/example-ner/weights.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/tagger/example-ner/weights.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/taggers/saved-models/loss.tsv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HindiNLPTools/resources/taggers/saved-models/weights.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
@@ -39,13 +52,33 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="md" value="468" />
-          <entry key="py" value="500" />
+          <entry key="py" value="503" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="465" />
-          <entry key="Python" value="503" />
+          <entry key="Python" value="506" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1574085016">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="LICENSE" value="1" />
+          <entry key="cfg" value="1" />
+          <entry key="gitattributes" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -53,28 +86,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HindiNLPTools/AutoClassifier.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-              <folding>
-                <element signature="e#115#144#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HindiNLPTools/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitattributes">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
@@ -83,48 +100,35 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="330">
-                <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+              <first_editor relative-caret-position="210">
+                <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+            <state relative-caret-position="165">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HindiNLPTools/HindiNer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
-              <folding>
-                <element signature="e#115#144#0" expanded="true" />
-                <marker date="1585723736278" expanded="true" signature="1555:1564" ph="..." />
-                <marker date="1585723736278" expanded="true" signature="1555:1607" ph="..." />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/setup.cfg">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HindiNLPTools/google_drive.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/LICENSE">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -136,6 +140,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>HindiNLPTools</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -146,8 +155,8 @@
         <option value="$PROJECT_DIR$/HindiNLPTools/google_drive.py" />
         <option value="$PROJECT_DIR$/HindiNLPTools/HindiNer.py" />
         <option value="$PROJECT_DIR$/HindiNLPTools/AutoClassifier.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -166,19 +175,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="HindiNLPTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HindiNLPTools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HindiNLPTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HindiNLPTools" type="462c0819:PsiDirectoryNode" />
-              <item name="HindiNLPTools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HindiNLPTools" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HindiNLPTools" type="462c0819:PsiDirectoryNode" />
-              <item name="HindiNLPTools" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="HindiNLP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HindiNLP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -248,7 +246,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="823" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="823" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
@@ -275,62 +273,39 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/HindiNLPTools/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/HindiNLPTools/AutoClassifier.py" />
+    <entry file="file://$PROJECT_DIR$/HindiNLPTools/google_drive.py" />
+    <entry file="file://$PROJECT_DIR$/HindiNLPTools/HindiNer.py" />
     <entry file="file://$PROJECT_DIR$/MANIFEST">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HindiNLPTools/__init__.py">
+    <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" selection-end-column="51" />
+        <state relative-caret-position="165">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HindiNLPTools/AutoClassifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="71" column="29" lean-forward="true" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-          <folding>
-            <element signature="e#115#144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/setup.cfg">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HindiNLPTools/google_drive.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/HindiNLPTools/HindiNer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="121" column="43" selection-start-line="121" selection-start-column="43" selection-end-line="121" selection-end-column="43" />
-          <folding>
-            <element signature="e#115#144#0" expanded="true" />
-            <marker date="1585723736278" expanded="true" signature="1555:1564" ph="..." />
-            <marker date="1585723736278" expanded="true" signature="1555:1607" ph="..." />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="71" column="28" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+          <first_editor relative-caret-position="210">
+            <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="57" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
         </state>
       </provider>
     </entry>
