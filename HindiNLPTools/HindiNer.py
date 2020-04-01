@@ -15,6 +15,7 @@ from flair.trainers import ModelTrainer
 import flair
 import torch
 from flair.visual.training_curves import Plotter
+from google_drive import  download_file_from_google_drive
 import os
 
 class NER():
@@ -23,10 +24,32 @@ class NER():
             self.embedding_types: List[TokenEmbeddings] = [FlairEmbeddings('hi-forward'),
                                                            FlairEmbeddings('hi-backward')]
             self.embeddings: StackedEmbeddings = StackedEmbeddings(embeddings=self.embedding_types)
-            
+            self.download_path_split = torch.__file__.split("/")[:-2]
+            self.download_dir = "/".join(self.download_path_split) + "/HindiNLPTools"
+            self.checkpoint_path = self.download_dir + "/resources/tagger/example-ner/best-model.pt"
+            self.checkpoint_download = not os.path.exists(self.download_dir+"/resources/tagger/example-ner/best-model.pt")
+            self.github_link = "https://github.com/avinsit123/HindiNLPTools/raw/master/HindiNLPTools/resources/tagger/example-ner/best-model.pt"
+            self.google_id = "1iKGBguWsvdJRospRSQfHnlmdHkawExJi"
+
         def Predict(self,text,is_path=False,path=""):
+           print(self.checkpoint_download)
            if is_path == False:
-               path = os.getcwd() + "/HindiNLPTools/resources/tagger/example-ner/best-model.pt"
+                if self.checkpoint_download == False:
+                    path = self.checkpoint_path
+                    print("Checkpoint File already present")
+                else:
+                    if not os.path.exists(self.download_dir + "/resources"):
+                        os.mkdir(self.download_dir + "/resources")
+                    if not os.path.exists(self.download_dir + "/resources/tagger"):
+                        os.mkdir(self.download_dir + "/resources/tagger")
+                    if not os.path.exists(self.download_dir + "/resources/tagger/example-ner"):
+                        os.mkdir(self.download_dir + "/resources/tagger/example-ner")
+                    print("Checkpoint File will be downloaded from ....")
+                    download_file_from_google_drive(self.google_id, self.checkpoint_path)
+                    print("Checkpoint Downloaded successfully")
+                    path = self.checkpoint_path
+                    self.checkpoint_download = False
+                    
            sentence = Sentence(text)
            tagger = SequenceTagger.load(path)
            tagger.predict(sentence)
@@ -34,9 +57,26 @@ class NER():
        
        
         def Predict_textfile(self,textfile,is_path=False,path=""):
+
             if is_path == False:
-                path = os.getcwd() + "/HindiNLPTools/resources/tagger/example-ner/best-model.pt"
+                if self.checkpoint_download == False:
+                    path = self.checkpoint_path
+                    print("Checkpoint File already present")
+                else:
+                    if not os.path.exists(self.download_dir + "/resources"):
+                        os.mkdir(self.download_dir + "/resources")
+                    if not os.path.exists(self.download_dir + "/resources/tagger"):
+                        os.mkdir(self.download_dir + "/resources/tagger")
+                    if not os.path.exists(self.download_dir + "/resources/tagger/example-ner"):
+                        os.mkdir(self.download_dir + "/resources/tagger/example-ner")
+                    print("Checkpoint File will be downloaded from ....")
+                    download_file_from_google_drive(self.google_id, self.checkpoint_path)
+                    print("Checkpoint Downloaded successfully")
+                    path = self.checkpoint_path
+                    self.checkpoint_download = False
+
             tagger = SequenceTagger.load(path)
+            
             dest_path = textfile[:-4]+"__NER.txt"
             out_f = open(dest_path,"w")
             with open(textfile,"r") as f:
@@ -63,7 +103,8 @@ class NER():
                                         tag_type=self.tag_type,
                                         use_crf=True)
             trainer: ModelTrainer = ModelTrainer(tagger, corpus)
-            trainer.train(os.getcwd() + '/HindiNLPTools/resources/taggers/saved-models',
+            
+            trainer.train( '/HindiNLPTools/resources/taggers/saved-models',
               learning_rate=train_dict["lr"],
               mini_batch_size=train_dict["batch_size"],
               max_epochs=train_dict["epochs"])
@@ -74,22 +115,22 @@ class NER():
          #  self.tagger = 
            
 #            
-#if __name__ == "__main__" :
-#    detect_ner = HindiNER()
-##    sentence = detect_ner.Predict("अविनाश आगरा में रहता है")
-##    print(sentence)
-##    detect_ner.Predict_textfile("Sentences.txt")
-#    train_dict = {
-#            "lr" : 0.1 ,
-#            "batch_size" : 32 ,
-#            "epochs" : 150 ,
-#            "hidden_size" : 256
-#            }
-#    detect_ner.train_NER(data_folder="/Users/r17935avinash/Desktop/Hindi-NLI/Ner",
-#                         train_file="train.txt",
-#                         dev_file="dev.txt",
-#                         test_file="test.txt",
-#                         train_dict=train_dict) 
+if __name__ == "__main__" :
+   detect_ner = NER()
+   sentence = detect_ner.Predict("अविनाश आगरा में रहता है")
+   print(sentence)
+#    detect_ner.Predict_textfile("Sentences.txt")
+   # train_dict = {
+   #         "lr" : 0.1 ,
+   #         "batch_size" : 32 ,
+   #         "epochs" : 150 ,
+   #         "hidden_size" : 256
+   #         }
+   #  detect_ner.train_NER(data_folder="/Users/r17935avinash/Desktop/Hindi-NLI/Ner",
+   #                       train_file="train.txt",
+   #                       dev_file="dev.txt",
+   #                       test_file="test.txt",
+   #                       train_dict=train_dict)
 #    
 #    
 #    
