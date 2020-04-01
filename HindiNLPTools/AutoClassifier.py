@@ -32,7 +32,7 @@ class classifier():
 
     def train(self,train_dict):
 
-        if os.path.exists(dest_path) == False :
+        if os.path.exists(self.dest_path) == False :
             if not os.path.exists(self.download_dir + "/resources"):
                 os.mkdir(self.download_dir + "/resources")
             if not os.path.exists(self.download_dir + "/resources/tagger"):
