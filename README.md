@@ -4,10 +4,19 @@ A specialized NLP library which provides tools to perform basic NLP tasks on Hin
 <ul>
   <li> <b> Named Entity Recognition </b>: The Library provides NER support to tag hindi sentences. Further you can apply NER to sentences in textfiles with running only one line of code. If you wish to train youe own NER model, you can do so without writing any script but in one line of code.</li>
   <li> <b> AutoClassifier </b> : Train your models on classification datasets just in one line of code. Finetune model using custom parameters</li>
-<ul>
-Install the Library using pip
-  
+</ul>
+
+## Installation 
+
+Directly install library using pip
+```python
+pip install HindiNLPTools
+```
+
+
 ## NER Tagger
+
+
 The NER Tagger identifies various parts of sentences and tags them with the type of entity they could represent. Currently the tags supported by our model are
 <table> 
   <tr> <th>  Heading </th> <td>  NEP </td>  <td>  NED </td> <td>  NEO </td>  <td>  NEA </td>  <td>  NEB </td>  <td>  NETP </td> <td>  NETO </td> <td>  NEL </td> <td>  NETI </td> <td>  NEN </td>  <td> NEM </td>  <td>  NETE </td>  </tr>
@@ -57,6 +66,24 @@ detect_ner = NER()
 sentence = detect_ner.Predict("अविनाश आगरा में रहता है",is_path=True,path="/path/to/trained/model")
 print(sentence)
  ```
+ 
+## Auto Classifier 
+
+The Library also provides support for training your own Classifier with just one line of code. 
+
+```python
+from HindiNLPTools.AutoClassifier import classifier
+SVC = classifier("../../Desktop/Hindi-NLI/BBC")
+train_dict = {
+          "hidden_size" : 512, # hidden size of LSTMs
+          "output_size" : 256, # output size of LSTMs
+          "lr" : 0.1 ,  # initial learning rate
+          "batch_size" : 256 , #mini batch_size
+          "n_epochs" : 150} # no.of epochs
+   SVC.train(train_dict)
+   SVC.predict("I am a good man")
+
+``` 
  
  
  

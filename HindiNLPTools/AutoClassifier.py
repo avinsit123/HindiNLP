@@ -68,18 +68,18 @@ class classifier():
         return sentence.labels
     
     
-
-if __name__ == "__main__" :
-   SVC = classifier("../../Desktop/Hindi-NLI/BBC")
-   train_dict = {
-           "hidden_size" : 512,
-           "output_size" : 256,
-           "lr" : 0.1 ,
-           "batch_size" : 256 ,
-           "n_epochs" : 150
-           }
-   SVC.train(train_dict)
-   SVC.predict("I am a good man")
+#
+# if __name__ == "__main__" :
+#    SVC = classifier("../../Desktop/Hindi-NLI/BBC")
+#    train_dict = {
+#            "hidden_size" : 512,
+#            "output_size" : 256,
+#            "lr" : 0.1 ,
+#            "batch_size" : 256 ,
+#            "n_epochs" : 150
+#            }
+#    SVC.train(train_dict)
+#    SVC.predict("I am a good man")
 #    
 #        
 #        
