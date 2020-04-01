@@ -25,10 +25,10 @@ class NER():
                                                            FlairEmbeddings('hi-backward')]
             self.embeddings: StackedEmbeddings = StackedEmbeddings(embeddings=self.embedding_types)
             self.download_path_split = torch.__file__.split("/")[:-2]
-            self.download_dir = "/".join(self.download_path_split) + "/HindiNLPTools"
+            self.download_dir = "/".join(self.download_path_split) + "/HindiNLP"
             self.checkpoint_path = self.download_dir + "/resources/tagger/example-ner/best-model.pt"
             self.checkpoint_download = not os.path.exists(self.download_dir+"/resources/tagger/example-ner/best-model.pt")
-            self.github_link = "https://github.com/avinsit123/HindiNLPTools/raw/master/HindiNLPTools/resources/tagger/example-ner/best-model.pt"
+            self.github_link = "https://github.com/avinsit123/HindiNLP/raw/master/HindiNLPTools/resources/tagger/example-ner/best-model.pt"
             self.google_id = "1iKGBguWsvdJRospRSQfHnlmdHkawExJi"
 
         def Predict(self,text,is_path=False,path=""):
@@ -104,7 +104,7 @@ class NER():
                                         use_crf=True)
             trainer: ModelTrainer = ModelTrainer(tagger, corpus)
             
-            trainer.train( '/HindiNLPTools/resources/taggers/saved-models',
+            trainer.train(self.download_dir + '/resources/taggers/saved-models',
               learning_rate=train_dict["lr"],
               mini_batch_size=train_dict["batch_size"],
               max_epochs=train_dict["epochs"])

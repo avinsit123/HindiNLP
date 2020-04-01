@@ -27,7 +27,7 @@ class classifier():
         self.label_dict = self.corpus.make_label_dictionary()
         self.embeddings = [FlairEmbeddings('hi-forward'),FlairEmbeddings('hi-backward'),]
         self.download_path_split = torch.__file__.split("/")[:-2]
-        self.download_dir = "/".join(self.download_path_split) + "/HindiNLPTools"
+        self.download_dir = "/".join(self.download_path_split) + "/HindiNLP"
         self.dest_path = self.download_dir + "/resources/taggers/classifiers"
 
     def train(self,train_dict):
