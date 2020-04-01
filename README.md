@@ -9,7 +9,7 @@ A specialized NLP library which provides tools to perform basic NLP tasks on Hin
 ## Installation 
 
 Directly install library using pip
-```python
+```terminal
 pip install HindiNLPTools
 ```
 
