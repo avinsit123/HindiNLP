@@ -73,7 +73,7 @@ The Library also provides support for training your own Classifier with just one
 
 ```python
 from HindiNLPTools.AutoClassifier import classifier
-SVC = classifier("../../Desktop/Hindi-NLI/BBC")
+SVC = classifier("/path/to/dir") # path to directory containing text files
 train_dict = {
           "hidden_size" : 512, # hidden size of LSTMs
           "output_size" : 256, # output size of LSTMs
