@@ -1,5 +1,7 @@
 # HindiNLP
 
+[![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
+[![PyPI version](https://badge.fury.io/py/HindiNLP.svg)](https://badge.fury.io/py/HindiNLP)
 A specialized NLP library which provides tools to perform basic NLP tasks on Hindi Datasets. Currently, the library supports 
 <ul>
   <li> <b> Named Entity Recognition </b>: The Library provides NER support to tag hindi sentences. Further you can apply NER to sentences in textfiles with running only one line of code. If you wish to train youe own NER model, you can do so without writing any script but in one line of code.</li>
